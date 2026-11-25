@@ -307,7 +307,7 @@
     }
 
     /* Werte */
-    .values {
+    .values, .prices {
       display: grid;
       grid-template-columns: .85fr 1.15fr;
       gap: 9%;
@@ -315,21 +315,22 @@
       padding-block: 115px;
     }
 
-    .values-copy { max-width: 470px; }
+    .values-copy, .prices-copy { max-width: 470px; }
     .values-copy p { color: var(--muted); }
+    .prices-copy p { color: var(--muted); }
 
-    .value-list {
+    .value-list, .prices-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 32px;
     }
 
-    .value-item {
+    .value-item, .price-item {
       padding: 21px 0;
       border-top: 1px solid var(--line);
     }
 
-    .value-item h3 {
+    .value-item h3, .price-item h3 {
       margin-bottom: 7px;
       font-size: 1.3rem;
     }
@@ -771,6 +772,38 @@
           <img src="img/baeume-und-moos.png" alt="Gepflegte Hecke im Garten" loading="lazy">
         </div>
       </div>
+    </section>
+
+    <section class="prices wrap reveal" id="preise">
+      <div class="prices-copy">
+        <p class="eyebrow">Transparente Preisgestaltung</p>
+        <h2>Preisliste zur Orientierung.</h2>
+        <p>Mir ist die transparent und faire Preisgestaltung für Sie und für mich wichtig. Die Preise orientieren sich am durchschnittlichen Preisniveau in Krefeld. Wir bieten Ihnen sehr gute Arbeit zum fairen Preis.</p>
+      </div>
+
+      <div class="prices-list">
+        <article class="price-item">
+          <h3>Pflege</h3>
+          <p>Allgemeine Gartenpflege, Beetpflege, Laubentfernung und Aufräumen - 35 € / Std..</p>
+        </article>
+        <article class="price-item">
+          <h3>Pflanzarbeiten</h3>
+          <p>Kleine Pflanzarbeiten, Beetplanung, Blumenzwiebeln setzen  - 35 € / Std.</p>
+        </article>
+        <article class="price-item">
+          <h3>Schnittarbeiten</h3>
+          <p>Hecken- und Baumschnitt, Zerkleinerung des Schnitts, je nach Höhe und Umfang - 35 - 50 € / Std.</p>
+        </article>
+        <article class="price-item">
+          <h3>Materialbeschaffung</h3>
+          <p>Einkauf von Material und Pflanzen. Wenn Sie mögen, nehmen wir Sie mit und Sie wählen selbst aus - 25 € / Std. plus Fahrtkosten 0,30 €/km </p>
+        </article>
+        <article class="price-item">
+          <h3>Abstransport</h3>
+          <p>Entsorgung von Pflanzen und Gartenabfällen - veränderlicher Festpreis je nach Menge.</p>
+        </article>
+      </div>
+
     </section>
 
     <section class="area wrap reveal" id="einsatzgebiet">
